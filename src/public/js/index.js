@@ -1,6 +1,3 @@
-// Zooming
-new Zooming().listen("img");
-
 // Carousel
 const carouselDiv = document.querySelector(".carousel-inner");
 let photosURL;
@@ -21,7 +18,7 @@ let photosURL;
         }
         const newImg = document.createElement("img");
         newImg.src = url;
-        newImg.setAttribute("class", "d-block w-100");
+        newImg.setAttribute("class", "d-block w-100 carousel-img");
         // emptyA.append(newImg);
         div.append(newImg);
         // div.append(emptyA);

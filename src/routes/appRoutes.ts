@@ -4,7 +4,7 @@ import { getPhotosURL } from "..";
 import emailValidator from "email-validator";
 import transporter from "../shared/nodemailer";
 
-import Commission, { CommissionClass } from "../models/Commission";
+import Commission from "../models/Commission";
 
 import bcrypt from "bcryptjs";
 
@@ -59,9 +59,7 @@ router.post("/commission", async (req: Request, res: Response) => {
     }
 });
 
-router.get("/commission", (req: Request, res: Response) =>
-    res.render("commission")
-);
+router.get("/panel", (req: Request, res: Response) => res.render("panel"));
 
 const { ADMIN_PASSWORD_HASH } = process.env;
 if (typeof ADMIN_PASSWORD_HASH !== "string") {
