@@ -1,0 +1,18 @@
+{
+    "overrides": [
+        {
+            "files": ["*"],
+            "options": {
+                "tabWidth": 4,
+                "arrowParens": "avoid",
+                "trailingComma": "none"
+            }
+        },
+        {
+            "files": ["*.ejs", ".html"],
+            "options": {
+                "tabWidth": 2
+            }
+        }
+    ]
+}

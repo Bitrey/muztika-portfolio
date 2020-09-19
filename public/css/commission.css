@@ -1,0 +1,20 @@
+.summary-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #4254f5;
+}
+
+.table {
+    overflow: scroll;
+    white-space: nowrap;
+}
+
+th,
+td {
+    overflow: visible;
+    width: 100%;
+}
+
+.jumbotron {
+    overflow: scroll;
+}
